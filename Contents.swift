@@ -282,7 +282,7 @@ class DrawView: UIView {
     }
 }
 
-let drawView = DrawView(frame: CGRect(x: 0, y: 0, width: 500, height: 700))
+let drawView = DrawView(frame: CGRect(x: 0, y: 0, width: 500, height: 400))
 drawView.backgroundColor = .white
 PlaygroundPage.current.liveView = drawView
 
@@ -291,9 +291,9 @@ var polygon: [CGPoint] = []
 // rectangle
 //var points = [(80, 80), (170, 80), (170, 170), (80, 170)]
 // simple polygon
-var points = [(100, 100), (150, 150), (150, 100), (200, 100), (300, 150), (200, 300)]
+//var points = [(100, 100), (150, 150), (150, 100), (200, 100), (300, 150), (200, 300)]
 // self intersected polygon
-//var points = [(100, 100), (130, 400), (100, 300), (300, 280), (300, 200), (200, 220), (200, 110), (300, 150), (200, 200)]
+var points = [(100, 100), (130, 400), (100, 300), (300, 280), (300, 200), (200, 220), (200, 110), (300, 150), (200, 200)]
 for point in points {
     polygon.append(CGPoint(x: point.0, y: point.1))
 }
